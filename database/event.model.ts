@@ -38,7 +38,6 @@ const EventSchema: Schema<IEvent> = new Schema(
     slug: {
       type: String,
       unique: true,
-      required: true,
       lowercase: true,
       trim: true,
     },
@@ -186,4 +185,3 @@ const Event: IEventModel =
 
 export { Event };
 export type { IEvent, IEventModel };
-
